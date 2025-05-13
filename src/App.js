@@ -18,7 +18,7 @@ const App = () => {
       const API_KEY = "4154c58b9da9483e1242b155c33c1c1e";
 
       // Step 1: Convert location (city/village) to coordinates
-      const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${location},IN&limit=1&appid=${API_KEY}`;
+      const geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${location},IN&limit=1&appid=${API_KEY}`;
       const geoResponse = await axios.get(geoUrl);
       if (geoResponse.data.length === 0) {
         throw new Error("Location not found. Try a different name.");
