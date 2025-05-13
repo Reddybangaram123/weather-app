@@ -15,7 +15,7 @@ const App = () => {
     setWeather(null);
 
     try {
-      const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+      const API_KEY = "4154c58b9da9483e1242b155c33c1c1e";
 
       // Step 1: Convert location (city/village) to coordinates
       const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${location},IN&limit=1&appid=${API_KEY}`;
